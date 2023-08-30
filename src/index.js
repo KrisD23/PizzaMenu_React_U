@@ -60,7 +60,7 @@ const cssStyle = {};
 function Header() {
   return (
     <header className="header">
-      <h1 style={cssStyle}>Fast Pizza .Co</h1>;
+      <h1 style={cssStyle}>Fast Pizza .Co</h1>
     </header>
   );
 }
@@ -69,29 +69,22 @@ function Menu() {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza
-        name="Pizza spinaci"
-        ingredients="Tomato, mozarella, spinach, and ricotta cheese"
-        image="pizzas\spinaci.jpg"
-        price={14}
-      />
-      <Pizza
-        name="Pizza spinaci"
-        ingredients="Tomato, mozarella, spinach, and ricotta cheese"
-        image="pizzas\spinaci.jpg"
-        price={12}
-      />
+      <div>
+        {pizzaData.map((pizza) => (
+          <Pizza pizzaObj={pizza} key={pizza.name} />
+        ))}
+      </div>
     </main>
   );
 }
 function Pizza(props) {
   return (
     <div className="pizza">
-      <img src={props.image} alt="Pizza spinaci"></img>
+      <img src={props.pizzaObj.photoName} alt="Pizza spinaci"></img>
       <div>
-        <h3>{props.name}</h3>
-        <p>{props.ingredients}</p>
-        <span>{props.price}</span>
+        <h3>{props.pizzaObj.name}</h3>
+        <p>{props.pizzaObj.ingredients}</p>
+        <span>{props.pizzaObj.price}</span>
       </div>
     </div>
   );
