@@ -72,11 +72,21 @@ function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
       {numPizzas > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza pizzaObj={pizza} key={pizza.name} />
-          ))}
-        </ul>
+        <>
+          <p>
+            ndulge in a symphony of flavors with our Deluxe Supreme Pizza,
+            crowned with a harmonious blend of savory pepperoni, succulent
+            sausage, and crisp bell peppers. Elevate your taste experience with
+            our signature Truffle Elegance Pizza, adorned with rich truffle oil,
+            velvety mushrooms, and creamy mozzarella for an exquisite culinary
+            masterpiece.
+          </p>
+          <ul className="pizzas">
+            {pizzas.map((pizza) => (
+              <Pizza pizzaObj={pizza} key={pizza.name} />
+            ))}
+          </ul>
+        </>
       ) : (
         <p>We are still working on our menu</p>
       )}
