@@ -1,6 +1,6 @@
 # Simple Pizza Page - React Static Website
 
-![Pizza Page Screenshot](./pizzaSiteScreenshot.png.png)
+![Pizza Page Screenshot](./pizzaSiteScreenshot.png)
 
 Welcome to the Simple Pizza Page! This is a static website built using React, where you can explore various delicious pizzas. Whether you're a pizza lover or just curious about different pizza flavors, this page is sure to make your mouth water.
 
@@ -16,7 +16,7 @@ Welcome to the Simple Pizza Page! This is a static website built using React, wh
 
 ## Demo
 
-Check out the live demo of the Simple Pizza Page: [Demo Link](https://your-demo-link-here.com)
+Check out the live demo of the Simple Pizza Page: [Demo Link](https://krisd23.github.io/React-pizza-menu)
 
 ## Features
 
